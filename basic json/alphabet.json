@@ -1,0 +1,38 @@
+[
+    {
+      "id": "A",
+      "image": "assets/images/image.png",
+      "blurb": "Sign for A"
+    },
+
+    {
+    "id": "B",
+    "image": "",
+      "blurb": "Sign for B"
+    },
+
+    {
+    "id": "C",
+    "image": "",
+      "blurb": "Sign for C"
+    },
+
+    {
+    "id": "D",
+    "image": "",
+    "blurb": "Sign for D"
+    },
+
+    {
+    "id": "E",
+    "image": "",
+      "blurb": "Sign for E"
+    },
+
+    {
+    "id": "F",
+    "image": "",
+      "blurb": "Sign for F"
+    }
+]
+

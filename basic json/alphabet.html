@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Render Data from JSON</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Set empty div. Will render data inside this div-->
+  <section>
+    <div class="holds-cards">
+    </div>
+  </section>
+</body>
+<script>
+
+// Store our holds-cards div
+const holdsCards = document.querySelector(".holds-cards");
+
+
+// We're calling each data object within our JSON letter (because we're rendering letters of the alphabet)
+// For good naming convention try to be as obvious as possible regarding what is stored in your variables
+
+// We're storing letters, so our function will be called     getLetters and we'll call each data object     letter
+
+// Our function will fetch the data, parse it (interpret it), then pass it into a loop which will iterate over each object in the JSON
+// We'll then set a context using template literals and the end result will be that we'll render a unique card for each letter
+
+// Lets write our function to handle the data in the json file
+
+const getLetters = () => {
+
+// Grab the json file, then parse the data and pass it into our function
+fetch('./alphabet.json').then( data => data.json() ).then(data => {
+
+    // Iterate over the data
+    // We are calling each data object 'letter'
+    data.forEach(letter => {
+
+      // Create a DIV element and store it in the card variable
+      const card = document.createElement("div");
+
+      // Add the class 'card' to the div
+      card.classList.add("card");
+
+      // Append the new element to the holds-cards div 
+      holdsCards.appendChild(card);
+
+      // Context for each card
+      template(card, letter);
+
+    });
+  })
+  .catch(err => console.log(err));
+}
+
+// Call our getLetters function
+getLetters()
+
+// Here we define the context that the function will use to render our Card Elements
+
+// Store our template to define the inner HTML and pass the relevant data to each card
+// We pass the    card (dom Element)    and     letter (data object)        into the template
+// Now using template literals we can render specific bits of data from our data objects such as the id for each object, or the image, or the blurb
+const template = (card, letter) => {
+card.innerHTML = 
+// We're using backticks here and writing our HTML for each card inside the backticks
+`
+      <div class="card-body">        
+
+        <div class="card-header"> ${letter.id} </div>
+
+        <div class="card-img-box"><img src=${letter.image} class="card__logo" alt="${letter.id}"></div>
+        
+        <div class="card-footer">${letter.blurb}</div>
+     </div>        
+`
+}
+</script>
+</html>
