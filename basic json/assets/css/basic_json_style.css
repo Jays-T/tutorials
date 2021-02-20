@@ -9,6 +9,28 @@ body
 {
     background: #fafafa;
 }
+.back
+{
+    margin-top: 8px;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    padding: 4px;
+    height: 40px;
+    width: 180px;
+    font-size: 1rem;
+    background-color: #046e60;
+    color: #fafafa;;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+.back:hover
+{
+    background-color: #fafafa;
+    color: #046e60;
+}
 .holds-cards
 {
     display: flex; 
