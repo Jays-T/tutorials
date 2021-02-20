@@ -1,38 +1,38 @@
 [
     {
       "id": "A",
-      "image": "assets/images/image.png",
-      "blurb": "Sign for A"
+      "image": "assets/images/angry_cat_70x70.png",
+      "blurb": "Angry Cat says 'A'"
     },
 
     {
     "id": "B",
-    "image": "",
-      "blurb": "Sign for B"
+    "image": "assets/images/angry_cat_70x70.png",
+      "blurb": "Angry Cat says 'B'"
     },
 
     {
     "id": "C",
-    "image": "",
-      "blurb": "Sign for C"
+    "image": "assets/images/angry_cat_70x70.png",
+      "blurb": "Angry Cat says 'C'"
     },
 
     {
     "id": "D",
-    "image": "",
-    "blurb": "Sign for D"
+    "image": "assets/images/angry_cat_70x70.png",
+    "blurb": "Angry Cat says 'D'"
     },
 
     {
     "id": "E",
-    "image": "",
-      "blurb": "Sign for E"
+    "image": "assets/images/angry_cat_70x70.png",
+      "blurb": "Angry Cat says 'E'"
     },
 
     {
     "id": "F",
-    "image": "",
-      "blurb": "Sign for F"
+    "image": "assets/images/angry_cat_70x70.png",
+      "blurb": "Angry Cat says 'F'"
     }
 ]
 

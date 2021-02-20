@@ -1,0 +1,43 @@
+body
+{
+    overflow: hidden;
+    background: rgb(51, 46, 46);
+}
+.links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.link
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    padding: 15px;
+    height: 50px;
+    border-radius: 2px;
+    border: 2px solid #fafafa;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+.link a
+{
+    color: #fafafa;
+    text-decoration: none;
+}
+.angry-cat
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+}
