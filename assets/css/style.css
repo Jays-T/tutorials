@@ -34,7 +34,7 @@ body
 
 }
 h1 {
-    margin: 3rem 0 6rem 0;
+    margin: 3rem 0 3rem 0;
 }
 h3,
 .playlist {
@@ -50,7 +50,7 @@ h3,
     width: 100%;
 }
 .playlist {
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 section {
     margin-bottom: 3rem;
@@ -69,6 +69,18 @@ section {
     letter-spacing: .5rem;
     transition: .3s ease-in-out;
     opacity: .9;
+}
+.resources {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.resources .link {
+    width: 200px;
+    height: calc(100%);
+    margin: 0 1rem;
+    border-left: 1px solid #241e1e;
+    border-right: 1px solid #241e1e;
 }
 .link:hover
 {
